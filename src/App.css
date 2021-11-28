@@ -1,13 +1,11 @@
 
 
 .res ,form{
-  width: 30vw;
   padding: 25px;
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
   margin: 6%;
-  margin-left: 35%;
-  overflow: scroll;  
+  overflow: scroll;
 }
 
 form > div {  
@@ -42,4 +40,9 @@ form > div >label > input,select{
 
 div > button {
   margin: 10px;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
 }
