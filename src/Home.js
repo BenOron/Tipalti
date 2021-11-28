@@ -61,6 +61,9 @@ const Home = () => {
   };
 
   const clearRes = () => {
+    if (localStorage.getItem("inputs")) {
+      localStorage.clear("inputs");
+    }
     setSubmit([]);
   };
 
@@ -68,7 +71,7 @@ const Home = () => {
     if (localStorage.getItem("inputs")) {
       localStorage.clear("inputs");
     }
-  }, [clearRes]);
+  }, []);
 
   return (
     <div className="main">
@@ -81,7 +84,6 @@ const Home = () => {
                 <Inputs
                   checked={item.checked}
                   register={register}
-                  clear={() => clearRes}
                   inpuType={item.type}
                   selectOption={item.selectOption}
                   inpuValue={item.value}
