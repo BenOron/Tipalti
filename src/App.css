@@ -6,6 +6,9 @@
   border: 1px solid #e5e5e5;
   margin: 6%;
   overflow: scroll;
+  display: inline-block;
+  width: 40vw;
+  margin-left: 30vw;
 }
 
 form > div {  
@@ -42,7 +45,22 @@ div > button {
   margin: 10px;
 }
 
-.App{
-  display: flex;
-  justify-content: center;
+
+
+@media (pointer:none), (pointer:coarse) {
+  .App{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (pointer:none), (pointer:coarse) {
+  .res ,form{
+    padding: 25px;
+    background: #f1f1f1;
+    border: 1px solid #e5e5e5;
+    margin: 6%;
+    overflow: scroll;
+    width: unset;
+  }
 }
